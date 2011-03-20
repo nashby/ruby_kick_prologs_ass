@@ -12,4 +12,4 @@ The problems have different levels of difficulty. Those marked with a single ast
 
 ### Ruby version
 
-With your help, guys, I want to solve this problems in Ruby. 
+With your help, guys, I want to solve these problems in Ruby. 
