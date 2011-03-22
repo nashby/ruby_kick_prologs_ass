@@ -5,7 +5,7 @@
 # L = [[3,2],[5,1],[7,1]]
 
 # Hint: The solution of problem 1.10 may be helpful.
-
+require 'prime'
 module Problems
     module Arithmetic
       def self.prime_factors_mult(n)

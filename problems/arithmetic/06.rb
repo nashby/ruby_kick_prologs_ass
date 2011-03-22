@@ -1,4 +1,4 @@
-# 2.06 (**) A list of Goldbach compositions. 
+﻿# 2.06 (**) A list of Goldbach compositions. 
 # Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
 
 # Example:
@@ -20,6 +20,24 @@
 # 1928 = 61 + 1867
 
 module Problems
-    module Arithmetic
+  module Arithmetic
+    def self.goldbach_list(first, last)
+      goldbach_list = []
+      first.upto(last) do |n|
+        if n.even?
+          primes = []
+          Prime.each(n) {|e| primes << e}
+          goldbach_nums = []
+          primes.each do |p|
+            if primes.include?(n-p)
+              goldbach_nums = [n, p, n-p] 
+              break
+            end
+          end
+          goldbach_list << goldbach_nums
+        end
+      end
+      goldbach_list
     end
+  end
 end
