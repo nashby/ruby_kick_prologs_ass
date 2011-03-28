@@ -16,4 +16,3 @@ class Problem03Test < Test::Unit::TestCase
     end
   end
 end
-# A and (B or C) equ A and B or A and C
