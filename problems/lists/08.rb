@@ -7,10 +7,9 @@
 
 module Problems
   module List
+    #with_index
     def self.compress(list)
-      compressed = []
-      list.each_index { |i| compressed << list[i] if list[i] != list[i+1] }
-      compressed
+      list.map.with_index { |element, index| element unless element.equal? list[index+1] }.compact
     end
   end
 end
