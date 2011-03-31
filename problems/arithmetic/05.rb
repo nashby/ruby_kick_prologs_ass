@@ -8,16 +8,9 @@
 module Problems
     module Arithmetic
       def self.goldbach(n)
-        primes = []
-        Prime.each(n) {|e| primes << e}
-        gb_nums = []
-        primes.each do |p|
-          if primes.include?(n-p)
-            gb_nums = [p, n-p] 
-            break
-          end
-        end
-        gb_nums
+        Prime.each(n).map { |prime|
+          [prime, n-prime] if Prime.prime? n-prime and n-prime > prime
+        }.compact
       end
     end
 end
