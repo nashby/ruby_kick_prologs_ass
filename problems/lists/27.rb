@@ -21,8 +21,7 @@ module Problems
   module List
     def self.group(list, groups)
       groups.sort!
-      list.combination(groups[2]).zip(list.combination(groups[1]), 
-                                      list.combination(groups[0]))
+      list.combination(groups[2]).zip(list.combination(groups[1]), list.combination(groups[0]))
     end 
   end
 end
