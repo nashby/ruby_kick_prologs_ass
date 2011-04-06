@@ -1,4 +1,4 @@
-﻿# 1.04 (*) Find the number of elements of a list.
+# 1.04 (*) Find the number of elements of a list.
 
 module Problems
   module List

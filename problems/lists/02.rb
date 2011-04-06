@@ -1,4 +1,4 @@
-﻿# 1.02 (*) Find the last but one element of a list. 
+# 1.02 (*) Find the last but one element of a list. 
 # (de: zweitletztes Element, fr: avant-dernier element)
 
 module Problems

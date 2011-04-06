@@ -1,4 +1,4 @@
-﻿# 2.06 (**) A list of Goldbach compositions. 
+# 2.06 (**) A list of Goldbach compositions. 
 # Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
 
 # Example:

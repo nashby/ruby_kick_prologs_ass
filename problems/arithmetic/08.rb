@@ -1,4 +1,4 @@
-﻿# 2.08 (*) Determine whether two positive integer numbers are coprime. 
+# 2.08 (*) Determine whether two positive integer numbers are coprime. 
 # Two numbers are coprime if their greatest common divisor equals 1.
 # Example:
 # ?- coprime(35, 64).

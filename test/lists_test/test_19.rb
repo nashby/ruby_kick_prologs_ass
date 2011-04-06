@@ -1,4 +1,4 @@
-﻿require 'test_helper'
+require 'test_helper'
 require 'lists/19'
 
 class Problem19Test < Test::Unit::TestCase

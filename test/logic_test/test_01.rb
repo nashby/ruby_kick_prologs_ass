@@ -1,4 +1,4 @@
-require 'test_helper'
+﻿require 'test_helper'
 require 'logic/01'
 
 class Problem01Test < Test::Unit::TestCase

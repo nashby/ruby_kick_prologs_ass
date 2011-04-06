@@ -1,4 +1,4 @@
-﻿require 'test_helper'
+require 'test_helper'
 require 'arithmetic/06'
 
 class Problem06Test < Test::Unit::TestCase
