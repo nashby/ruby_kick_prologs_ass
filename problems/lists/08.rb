@@ -7,9 +7,8 @@
 
 module Problems
   module List
-    #with_index
     def self.compress(list)
-      list.map.with_index { |element, index| element unless element.equal? list[index+1] }.compact
+      list.chunk{|x| x}.map(&:first)
     end
   end
 end
