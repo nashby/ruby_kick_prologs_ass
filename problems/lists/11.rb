@@ -8,21 +8,8 @@
 module Problems
   module List
     def self.encode_modified(list)
-      pack_list = []
-      sub_list=[]    
-      list.each_index do |i| 
-        sub_list << list[i]
-        unless list[i] == list[i+1]
-          pack_list << sub_list
-          sub_list = []
-        end
-      end
-      pack_list.map do |i| 
-        if i.size == 1
-          i.first
-        else
-          [i.size, i.first]
-        end
+      list.chunk{|x| x}.map do |x, group|
+        group.size.equal?(1) ? group.first : [group.size, x]
       end
     end
   end

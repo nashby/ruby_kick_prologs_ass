@@ -8,16 +8,7 @@
 module Problems
   module List
     def self.encode(list)
-      pack_list = []
-      sub_list=[]    
-      list.each_index do |i| 
-        sub_list << list[i]
-        unless list[i] == list[i+1]
-          pack_list << sub_list
-          sub_list = []
-        end
-      end
-      pack_list.map {|i| [i.size, i.first]}
+      list.chunk{|x| x}.map{|x, group| [group.size, x]}
     end
   end
 end

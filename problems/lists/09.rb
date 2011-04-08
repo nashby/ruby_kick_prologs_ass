@@ -7,16 +7,7 @@
 module Problems
   module List
     def self.pack(list)     
-      pack_list = []
-      sub_list=[]    
-      list.each_index do |i| 
-        sub_list << list[i]
-        unless list[i] == list[i+1]
-          pack_list << sub_list
-          sub_list = []
-        end
-      end
-      pack_list
+      list.chunk{|x| x}.map{|x, group| group}
     end
   end
 end
