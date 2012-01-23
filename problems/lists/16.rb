@@ -4,8 +4,8 @@
 # X = [a,b,d,e,g,h,k]
 module Problems
   module List
-    def self.drop(list, n)
-	    list.delete_if {|e| list.index(e).succ.modulo(n).zero? }
+    def self.drop(list, n)	    
+		list.reject.with_index {|item,index| index.succ.modulo(n).zero? }
     end
   end
 end
