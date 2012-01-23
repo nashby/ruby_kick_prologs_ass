@@ -5,7 +5,7 @@
 module Problems
   module List
     def self.drop(list, n)	    
-		list.reject.with_index {|item,index| index.succ.modulo(n).zero? }
+      list.reject.with_index {|item,index| index.succ.modulo(n).zero? }
     end
   end
 end
