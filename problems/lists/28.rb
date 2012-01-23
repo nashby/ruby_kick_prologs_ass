@@ -1,4 +1,4 @@
-# 1.28 (**) Sorting a list of lists according to length of sublists 
+# 1.28 (**) Sorting a list of lists according to length of sublists
 # a) We suppose that a list (InList) contains elements that are lists themselves. The objective is to sort the elements of InList according to their length. E.g. short lists first, longer lists later, or vice versa.
 
 # Example:
@@ -18,10 +18,10 @@ module Problems
 		def self.lsort(list)
 			list.sort_by {|e| e.size}
 		end
-		
+
 		def self.lfsort(list)
-			list_of_sizes = list.map {|e| e.size}
-			list.sort_by {|e| list_of_sizes.count(e.size)}
+			list_of_sizes = list.map { |e| e.size }
+			list.sort_by { |e| list_of_sizes.count(e.size) }
 		end
 	end
-end	
+end

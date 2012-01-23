@@ -9,7 +9,7 @@ module Problems
   module Arithmetic
     def self.goldbach(n)
       Prime.each(n).map do |prime|
-        [prime, n-prime] if Prime.prime? n-prime and n-prime > prime
+        [prime, n-prime] if Prime.prime?(n-prime) && n-prime > prime
       end.compact
     end
   end

@@ -1,4 +1,4 @@
-# 1.08 (**) Eliminate consecutive duplicates of list elements. 
+# 1.08 (**) Eliminate consecutive duplicates of list elements.
 # If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
 
 # Example:
@@ -8,7 +8,7 @@
 module Problems
   module List
     def self.compress(list)
-      list.chunk{|x| x}.map(&:first)
+      list.chunk{ |x| x }.map(&:first)
     end
   end
 end

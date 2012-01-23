@@ -1,4 +1,4 @@
-# 3.03 (**) Truth tables for logical expressions (3). 
+# 3.03 (**) Truth tables for logical expressions (3).
 # Generalize problem 3.02 in such a way that the logical expression may contain any number of logical variables. Define table/2 in a way that table(List,Expr) prints the truth table for the expression Expr, which contains the logical variables enumerated in List.
 
 # Example:

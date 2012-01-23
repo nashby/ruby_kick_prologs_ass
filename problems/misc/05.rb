@@ -6,7 +6,7 @@ module Problems
   module Misc
     def self.full_words(number)
       digits = {0 => "zero",
-                   1 => "one", 
+                   1 => "one",
                    2 => "two",
                    3 => "three",
                    4 => "four",
@@ -15,7 +15,7 @@ module Problems
                    7 => "seven",
                    8 => "eight",
                    9 => "nine"}
-      number.to_s.split(//).map{|digit| digits[digit.to_i]}.join("-")
+      number.to_s.split(//).map{ |digit| digits[digit.to_i] }.join("-")
     end
   end
 end

@@ -4,7 +4,7 @@
 module Problems
   module Arithmetic
     def self.primes(first, last)
-      Prime.each(last).select {|prime| prime > first}
+      Prime.each(last).select { |prime| prime > first }
     end
   end
 end

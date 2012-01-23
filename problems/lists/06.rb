@@ -1,4 +1,4 @@
-# 1.06 (*) Find out whether a list is a palindrome. 
+# 1.06 (*) Find out whether a list is a palindrome.
 # A palindrome can be read forward or backward; e.g. [x,a,m,a,x].
 
 module Problems
