@@ -1,6 +1,6 @@
 ### P-99: Ninety-Nine Prolog Problems in Ruby
 
-[![Build Status](http://travis-ci.org/nashby/ruby_kick_prologs_ass.png)](http://travis-ci.org/nashby/ruby_kick_prologs_ass)
+[![Build Status](https://secure.travis-ci.org/nashby/ruby_kick_prologs_ass.png)](http://travis-ci.org/nashby/ruby_kick_prologs_ass)
 
 ### About P-99
 
